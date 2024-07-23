@@ -77,52 +77,6 @@
       "defaultSystemChatPrompt": "",
       "defaultConfig": {}
     }
-    {
-      "model": "claude-3-5-sonnet-20240620",
-      "name": "claude-3-5",
-      "avatar": "/imgs/model/calude.svg",
-      "maxContext": 200000,
-      "maxResponse": 4000,
-      "quoteMaxToken": 120000,
-      "maxTemperature": 1.2,
-      "charsPointsPrice": 0.0015,
-      "censor": false,
-      "vision": true,
-      "datasetProcess": true,
-      "usedInClassify": true,
-      "usedInExtractFields": true,
-      "usedInToolCall": false,
-      "usedInQueryExtension": false,
-      "toolChoice": true,
-      "functionCall": false,
-      "customCQPrompt": "",
-      "customExtractPrompt": "",
-      "defaultSystemChatPrompt": "",
-      "defaultConfig": {}
-    }
-    {
-      "model": "midjourney",
-      "name": "midjourney",
-      "avatar": "/imgs/model/calude.svg",
-      "maxContext": 32000,
-      "maxResponse": 32000,
-      "quoteMaxToken": 100000,
-      "maxTemperature": 1.2,
-      "charsPointsPrice": 0.15,
-      "censor": false,
-      "vision": true,
-      "datasetProcess": false,
-      "usedInClassify": false,
-      "usedInExtractFields": false,
-      "usedInToolCall": false,
-      "usedInQueryExtension": false,
-      "toolChoice": true,
-      "functionCall": false,
-      "customCQPrompt": "",
-      "customExtractPrompt": "",
-      "defaultSystemChatPrompt": "",
-      "defaultConfig": {}
-    }
   ],
   "vectorModels": [
     {
