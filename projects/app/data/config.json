@@ -1,12 +1,11 @@
 // 已使用 json5 进行解析，会自动去掉注释，无需手动去除
 {
-  "feConfigs": {
-    "lafEnv": "https://laf.dev" // laf环境。 https://laf.run （杭州阿里云） ,或者私有化的laf环境。如果使用 Laf openapi 功能，需要最新版的 laf 。
-  },
   "systemEnv": {
+    "openapiPrefix": "fastgpt",
     "vectorMaxProcess": 15,
     "qaMaxProcess": 15,
-    "pgHNSWEfSearch": 100 // 向量搜索参数。越大，搜索越精确，但是速度越慢。设置为100，有99%+精度。
+    "pgHNSWEfSearch": 100,
+    "tokenWorkers": 20
   },
   "llmModels": [
     {
@@ -41,6 +40,75 @@
       "quoteMaxToken": 120000,
       "maxTemperature": 1.2,
       "charsPointsPrice": 0.06,
+      "censor": false,
+      "vision": true,
+      "datasetProcess": false,
+      "usedInClassify": false,
+      "usedInExtractFields": false,
+      "usedInToolCall": false,
+      "usedInQueryExtension": false,
+      "toolChoice": true,
+      "functionCall": false,
+      "customCQPrompt": "",
+      "customExtractPrompt": "",
+      "defaultSystemChatPrompt": "",
+      "defaultConfig": {}
+    }
+    {
+      "model": "gpt-4-32k",
+      "name": "gpt-4-32k",
+      "avatar": "/imgs/model/openai.svg",
+      "maxContext": 32000,
+      "maxResponse": 32000,
+      "quoteMaxToken": 100000,
+      "maxTemperature": 1.2,
+      "charsPointsPrice": 0.12,
+      "censor": false,
+      "vision": true,
+      "datasetProcess": false,
+      "usedInClassify": false,
+      "usedInExtractFields": false,
+      "usedInToolCall": false,
+      "usedInQueryExtension": false,
+      "toolChoice": true,
+      "functionCall": false,
+      "customCQPrompt": "",
+      "customExtractPrompt": "",
+      "defaultSystemChatPrompt": "",
+      "defaultConfig": {}
+    }
+    {
+      "model": "claude-3-5-sonnet-20240620",
+      "name": "claude-3-5",
+      "avatar": "/imgs/model/calude.svg",
+      "maxContext": 200000,
+      "maxResponse": 4000,
+      "quoteMaxToken": 100000,
+      "maxTemperature": 1.2,
+      "charsPointsPrice": 0.0015,
+      "censor": false,
+      "vision": true,
+      "datasetProcess": true,
+      "usedInClassify": true,
+      "usedInExtractFields": true,
+      "usedInToolCall": false,
+      "usedInQueryExtension": false,
+      "toolChoice": true,
+      "functionCall": false,
+      "customCQPrompt": "",
+      "customExtractPrompt": "",
+      "defaultSystemChatPrompt": "",
+      "defaultConfig": {}
+    }
+    {
+      "model": "midjourney",
+      "name": "midjourney",
+      "avatar": "/imgs/model/openai.svg",
+      "maxContext": 32000,
+      "maxResponse": 32000,
+      "quoteMaxToken": 100000,
+      "maxTemperature": 1.2,
+      "charsPointsPrice": 0.15,
       "censor": false,
       "vision": true,
       "datasetProcess": false,
@@ -90,6 +158,15 @@
       "maxToken": 3000,
       "weight": 100
     }
+    {
+      "model": "m3e",
+      "name": "m3e",
+      "avatar": "/imgs/model/openai.svg",
+      "charsPointsPrice": 0.0002,
+      "defaultToken": 700,
+      "maxToken": 8000,
+      "weight": 100
+    },
   ],
   "reRankModels": [],
   "audioSpeechModels": [
