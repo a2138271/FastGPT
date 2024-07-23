@@ -166,7 +166,7 @@
       "defaultToken": 700,
       "maxToken": 8000,
       "weight": 100
-    },
+    }
   ],
   "reRankModels": [],
   "audioSpeechModels": [
